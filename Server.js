@@ -3,9 +3,12 @@ import Router from "./src/Routes/Router.js";
 import cors from "cors";
 const app = express();
 app.use(express.json());
-app.use(cors(
-  {origin: ""}
-));
+app.use(
+  cors({
+    origin: "https://stay-alert-tev4.vercel.app",
+    methods: ["GET", "POST"],
+  })
+);
 app.use(express.urlencoded({ extended: true }));
 const port = 3000;
 

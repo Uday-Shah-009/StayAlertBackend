@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://stay-alert-tev4.vercel.app",
+    origin: "https://stayalertsms.netlify.app",
     methods: ["GET", "POST"],
   })
 );
